@@ -8,6 +8,11 @@
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <div>
@@ -16,33 +21,44 @@
 
     <section>
 
-        <div>
+        <div class="header-form">
             <div class="titulo">
                 <img src="./images/log-in.svg" alt="">
-                <h3>faça seu login</h3>
+                <h3>Faça seu login</h3>
             </div>
-                <p>entre com suas informaçoes de cadastro</p>
+                <p>Entre com suas informações de cadastro.</p>
         </div>
 
         <form action="">
-            <label for="">E-mail</label>
-            <input type="email" name="" id="">
-            <label for="">senha</label>
-            <input type="password" name="" id="">
-            
-            <div>
-                <input type="checkbox" name="Lembreme" id="">
 
-                <a>esqueci minha senha</a>
+            <div class="e-mail">
+                <label for="">E-mail</label>
+                <input type="email" name="" id="" >
             </div>
 
-            <input type="button" value="Entrar">
-            <p>nao tem uma conta? <a href="">Resistra-se</a> </p>
+            <div class="senha">
+                <label for="">Senha</label>
+                <input type="password" name="" id="">
+            </div>
+            
+            <div class="lembrar">
+                <div class="check">
+                    <input type="checkbox" name="Lembreme" id="">
+                    <p>Lembre-me</p>
+                </div>
+
+                <a href="">esqueci minha senha</a>
+            </div>
+
+            <input type="button" value="Entrar" class="btn">
+
+            <p class="registro">nao tem uma conta? <a href="">Resistra-se</a> </p>
 
         </form>
+
     </section>
 
-    <img src="./images/side-image.jpg" alt="" >
+    <img src="./images/side-image.jpg" alt="" class="img">
     
 </body>
 </html>
