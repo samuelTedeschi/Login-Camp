@@ -21,7 +21,6 @@ section{
     margin-top: 126px;
     width: 572px;
     height: 512px;
-
 }
 
 .header-form{
@@ -29,7 +28,6 @@ section{
     margin-right: 117px;
     margin-bottom: 27px;
     margin-top: 55px;
-    
 }
 
 .header-form p {
@@ -43,7 +41,6 @@ section{
 }
 
 .titulo h3 {
-   
     margin-left: 10px;
     font-size: 24px;
     color: #D4CCB6;
@@ -51,7 +48,6 @@ section{
 }
 
 .e-mail{
-    
     display: flex;
     flex-direction: column;
     margin-left: 119px;
@@ -67,14 +63,26 @@ section{
 
 .e-mail input{
     background: #24221F;
+    color: #D4CCB6;
     height: 44px;
     border: 1px solid #868686;
-    
     border-radius: 4px;
 }
 
+.e-mail input:placeholder-shown{
+    color:#D4CCB6;
+    background-image: url(./images/mail.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 1.5rem;
+}
+
+.e-mail input:focus{
+    outline: none;
+    border: 2px solid #FFC632;
+}
+
 .senha{
-    
     display: flex;
     flex-direction: column;
     margin-left: 119px;
@@ -94,9 +102,18 @@ section{
     border: 1px solid #868686;
     border-radius: 4px;
 }
+
 .senha input:placeholder-shown{
-    color: #FFC632;
-    
+    color: #AFB6C2;
+    background-image: url(./images/lock.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding-left: 1.5rem;
+}
+
+.senha input:focus{
+    outline: none;
+    border: 2px solid #FFC632;
 }
 
 .lembrar{
@@ -118,9 +135,11 @@ section{
     display: flex ;
     align-items: center;
 }
+
 .check input{
     border: 1px solid #868686;
 }
+
 .check p {
     color: #868686;
     font-size: 16px;
@@ -157,4 +176,32 @@ section{
     height: 900px;
     left: 720px;
     top: 0px;
+}
+
+@media only screen and (max-width: 375px){
+    .logo{
+        margin-left: 20px;
+    }
+    
+    .main{
+        margin: 0;
+        background: #191816;
+    }
+
+    .e-mail{
+        margin-left: 20px;
+    }
+
+    .senha{
+        margin-left: 20px;
+    }
+
+    .btn{
+        margin-left: 20px;
+    }
+
+    .registro{
+        text-align:center;
+        
+    }
 }
