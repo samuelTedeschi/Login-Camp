@@ -15,7 +15,6 @@ body{
 
 section{
     background: #24221F;
-    border: 1px solid gray;
     border-radius: 4px;
     margin-left: 74px;
     margin-right: 74px;
@@ -69,8 +68,8 @@ section{
 .e-mail input{
     background: #24221F;
     height: 44px;
-    border: 1px solid #FFC632;
-    box-shadow: 0px 0px 0px 2px #FFDE88;
+    border: 1px solid #868686;
+    
     border-radius: 4px;
 }
 
@@ -92,9 +91,12 @@ section{
 .senha input{
     background: #24221F;
     height: 44px;
-    border: 1px solid #FFC632;
-    box-shadow: 0px 0px 0px 2px #FFDE88;
+    border: 1px solid #868686;
     border-radius: 4px;
+}
+.senha input:placeholder-shown{
+    color: #FFC632;
+    
 }
 
 .lembrar{
