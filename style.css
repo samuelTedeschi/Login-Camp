@@ -23,6 +23,8 @@ section{
     height: 512px;
 }
 
+/* Titulo do Cadastro*/
+
 .header-form{
     margin-left: 119px;
     margin-right: 117px;
@@ -46,6 +48,8 @@ section{
     color: #D4CCB6;
     font-size: 24px;
 }
+
+/* E-mail*/
 
 .e-mail{
     display: flex;
@@ -82,6 +86,8 @@ section{
     border: 2px solid #FFC632;
 }
 
+/* Senha */
+
 .senha{
     display: flex;
     flex-direction: column;
@@ -101,20 +107,23 @@ section{
     height: 44px;
     border: 1px solid #868686;
     border-radius: 4px;
+    padding-left: 1.5rem;
+    background-image: url(./images/lock.svg);
+    background-repeat: no-repeat;
+    background-position: left;
+   
 }
 
 .senha input:placeholder-shown{
     color: #AFB6C2;
-    background-image: url(./images/lock.svg);
-    background-repeat: no-repeat;
-    background-position: left;
-    padding-left: 1.5rem;
 }
 
 .senha input:focus{
     outline: none;
     border: 2px solid #FFC632;
 }
+
+/* Check */
 
 .lembrar{
     display: flex;
@@ -140,11 +149,14 @@ section{
     border: 1px solid #868686;
 }
 
+
 .check p {
     color: #868686;
     font-size: 16px;
     margin-left: 5px;
 }
+
+/* Boatao */
 
 .btn{
     margin-left: 119px;
@@ -163,12 +175,21 @@ section{
     font-weight: 600;
 }
 
+/* Nao tenho Conta*/
+
 .registro{
     font-weight: 400;
     font-size: 14px;
     color: #FFC632;
     text-align: center;
 }
+
+.registro a {
+    color: #FFC632;
+    text-decoration: none;
+}
+
+/* Imagem*/
 
 .img{
     position: absolute;
@@ -178,14 +199,21 @@ section{
     top: 0px;
 }
 
-@media only screen and (max-width: 375px){
+@media only screen and (max-width: 600px){
     .logo{
         margin-left: 20px;
+       
     }
     
-    .main{
-        margin: 0;
+    section{
+        margin:0;
         background: #191816;
+        width: 500px;
+        
+    }
+
+    .header-form{
+        margin-left: 20px;
     }
 
     .e-mail{
@@ -194,6 +222,12 @@ section{
 
     .senha{
         margin-left: 20px;
+        
+    }
+
+    .lembrar{
+        margin-left: 20px;
+        margin-right: 120px;
     }
 
     .btn{
@@ -201,7 +235,12 @@ section{
     }
 
     .registro{
-        text-align:center;
+        text-align:start;
+        margin-left: 20px;
         
+    }
+
+    .img{
+        display: none;
     }
 }
